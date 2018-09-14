@@ -8,6 +8,8 @@ titles:
 show_title: false
 ---
 <div class="layout--home">
+  <h1>{{site.title}}</h1>
+  <h5>{{site.description}}</h5>
   {%- include article-list.html articles=paginator.posts type='common' article_type='BlogPosting'
     show_excerpt=true excerpt_type=site.excerpt_type show_readmore=true show_info=true -%}
   {%- include paginator.html -%}
