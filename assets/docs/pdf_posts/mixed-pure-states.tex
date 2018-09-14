@@ -1,0 +1,415 @@
+\documentclass[a4]{article}
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amssymb,amsmath,xcolor}
+\usepackage[lite]{mtpro2}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={A few words on mixed and pure states},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\title{A few words on mixed and pure states}
+\author{Santiago Quintero de los Ríos}
+\date{\the\year}
+
+\begin{document}
+\maketitle
+
+I see that there is a bit of confusion between mixed and pure states in
+quantum mechanics. This is because the measurement of arbitrary
+obsevables for \textbf{pure states} is probabilistic, and this is easily
+confused with the probabilitites associated to a \textbf{mixed state}.
+
+So let's begin with the probabilistic nature of measurement of
+observables of \textbf{pure} states.
+
+\subsection{Pure states}\label{pure-states}
+
+Let $\mathcal{H}$ be a Hilbert space (which for our sanity, we will
+assume finite-dimensional, of dimension $N$). Any given vector
+$\left|\psi\right\rangle$ is a \textbf{pure state}. For example, in
+the spin-$1/2$ case, both $\left|+\right\rangle$ and
+$\left|-\right\rangle$ are pure states, but also any complex-linear
+combination of them is a pure state (since these two vectors span all of
+$\mathcal{H}$).
+
+Now let $A$ be an observable with associated hermitian operator
+$\hat{A}$. Suppose that $\hat{A}$ has a set of orthonormal
+eigenstates $\{\left|a_1\right\rangle,\dots,\left|a_n\right\rangle\}$.
+This means that
+$\hat{A}\left|a_k\right\rangle = a_k\left|a_k\right\rangle$. Assuming
+that the spectrum does not have any degeneracies (i.e.~repeated
+eigenvalues), then given any arbitrary state
+$\left|\psi\right\rangle$, the \textbf{probability} of obtaining the
+value $a_k$ when measuring the observable $A$ is
+
+\begin{equation*}P(A=a_k|\psi) = \left|\left\langle a_k\right|\psi\rangle\right|^2.\end{equation*}
+
+Here we used standard notation from probability, and we explicitly wrote
+$P(A=a_k|\psi)$ as a conditional probability, since this is the
+probability to measure the value $a_k$ of the observable $A$
+\emph{given the fact} that we \textbf{know} that the system is in state
+$|\psi\rangle$. Note that applying this equation to
+$|\psi\rangle = |a_j\rangle$ for some $j$, we obtain
+
+\begin{equation*} P(A=a_k|a_j) = \left|\left\langle a_k\right|a_j\rangle\right|^2 = \delta_{kj}.\end{equation*}
+
+This is perfectly consistent with the axioms of quantum mechanics. If we
+measure the observable $A$ \textbf{knowing} that the system is in the
+eigenstate $|a_j\rangle$, then we are absolutely \emph{certain} that
+the measurement will return the value $a_j$. However, if the state is
+\textbf{not} an eigenstate of $\hat{A}$, then we have
+\emph{uncertainty} about what the measurement will return. This
+(un)certainty is what the probability $P(A=a_k|\psi)$ represents.
+
+Then \textbf{even if we are absolutely certain that the system is in a
+given state}, there is uncertainty regarding the outcome of (most)
+experiments.
+
+But what if we are not even certain about what state the system is in?
+That's where mixed states come in.
+
+\subsection{Mixed states}
+\label{sec:mixed-states}
+
+Imagine the following machine: It can emit a particle randomly in
+\emph{one} of two different states $|\psi_1\rangle,|\psi_2\rangle$,
+each state $|\psi_j\rangle$ with probability $p_j$. After being
+emitted, the particle travels to a detector which measures the
+observable $A$. After the machine shoots a particle, we are
+\emph{uncertain} about what the state of the particle is. It might be in
+state $|\psi_1\rangle$ or in state $|\psi_2\rangle$, the point is
+that \emph{we don't know}. In this case we say that the system is in a
+\textbf{mixed state}. Compare this to the case of the previous section,
+where we were \emph{absolutely} certain that the particle was in a
+specific state (this might be achieved by \emph{preparing the system}
+first, e.g.~via a measurement).
+
+Now we ask: After the random machine shoots a particle, what is the
+probability of measuring the value $a_k$ for the observable $A$?
+
+We can make use of a bit of probability theory and \emph{marginalize}.
+We are absolutely certain that the particle will be in \textbf{one} of
+the states $|\psi_j\rangle$, but we don't know which one. The event
+``the observed value of $A$ is $a_k$'' is then trivially equivalent
+to the two events
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The observed value of $A$ is $a_k$, AND
+\item
+  the particle is either in state $\vert\psi_1 \rangle $ or in state
+  $\vert\psi_2 \rangle$.
+\end{enumerate}
+
+Of course, statement 2 is rather trivial. But both statements can be
+written simultaneously as
+
+\begin{equation*} (A=a_k)\wedge(|\psi\rangle=|\psi_1\rangle \vee |\psi\rangle=|\psi_1\rangle).\end{equation*}
+
+We now use the distributive property of conjunction and disjunction
+$( p \wedge (q\vee r) \Leftrightarrow (p\wedge q)\vee (p\wedge r))$
+and obtain that our statement is equivalent to
+
+\begin{equation*} (A=a_k\wedge|\psi\rangle=|\psi_1\rangle) \vee (A=a_k\wedge|\psi\rangle=|\psi_1\rangle).\end{equation*}
+
+Then the probability that we measure $a_k$ is equal to the probability
+that
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The observed value of $A$ is $a_k$ AND the state is
+  $\vert\psi_1\rangle$, OR
+\item
+  the observed value of $A$ is $a_k$ AND the state is
+  $\vert\psi_2\rangle$.
+\end{enumerate}
+
+Therefore:
+
+\begin{equation*}P(A=a_k) = P(A=a_k\wedge|\psi\rangle=|\psi_1\rangle) + P(A=a_k\wedge|\psi\rangle=|\psi_2\rangle).\end{equation*}
+
+But now we use the \textbf{definition} of conditional probability:
+$P(A\wedge B)=P(A|B)P(B)$, that is, the probability both $A$ and
+$B$ occur is the probability that $B$ occurs times the probability
+that $A$ occurs given the fact that we know that $B$ occurs. Using
+this definition, the previous equation becomes (I'm dropping the
+$A=...$ and $|\psi\rangle =...$ parts)
+
+\begin{equation*}\begin{aligned}P(A=a_k) &= P(a_k\vert~|\psi_1\rangle)P(|\psi_1\rangle) + P(a_k\vert~|\psi_2\rangle)P(|\psi_2\rangle)\\ &= {\color{blue}p_1}{\color{purple}P(a_k\vert~|\psi_1\rangle)} + {\color{blue}p_2}{\color{purple}P(a_k\vert~|\psi_2\rangle)}\\
+ &= {\color{blue}p_1}{\color{purple}|\langle a_k\vert\psi_1\rangle|^2} + {\color{blue}p_2}{\color{purple}|\langle a_k\vert\psi_2\rangle|^2} \end{aligned}\end{equation*}
+
+Here we can identify \textbf{two different sources of uncertainty}.{\color{purple} The
+first one is purely quantum-mechanical. This uncertainty cannot be
+eliminated, even with \textbf{perfect information} about the state of
+the system}. {\color{blue}The second one is associated with our imperfect knowledge of
+the system, and it can be reduced with better information about its
+state}. For example, if we were \emph{certain} that the system is in
+state $|\psi_1\rangle$, then $p_1=1$ and $p_2=0$, so that
+$P(A=a_k) = P(A=a_k|\psi_1) = |\langle a_k | \psi_1\rangle|^2$, just
+as in the case of a pure state.
+
+All the previous discussion is generalized to the case of $m$
+different possible states, say $|\psi_1\rangle,\dots,|\psi_m\rangle$,
+with probabilities $p_1,\dots,p_m$. In this case, the probability of
+observing the value $a_k$ when measuring $A$ is
+
+\begin{equation*}P(A=a_k) = \sum_{i=1}^m{\color{blue} p_i}{\color{purple}|\langle a_k|\psi_i\rangle|^2}.\end{equation*}
+
+\subsection{One matrix to rule them
+all}\label{one-matrix-to-rule-them-all}
+
+How do we represent mixed states mathematically? Suppose we have a mixed
+state with possible outcomes $|\psi_1\rangle,\dots,|\psi_m\rangle$,
+and probabilities $p_1,\dots,p_m$. Recall that (basically) the only
+things that we actually measure and care about in quantum mechanics are
+the \emph{expectation values} of observables. The expectation value is
+just the weighed average of the observable, so
+
+\begin{equation*}\begin{aligned} \langle A \rangle_{\text{mixed}} &= \sum_{k} a_k P(A=a_k)\\
+  &= \sum_{k} a_k \sum_i p_i |\langle a_k | \psi_i \rangle|^2\\
+  &= \sum_{k} a_k \sum_i p_i \langle a_k | \psi_i \rangle\langle \psi_i |a_k\rangle\\
+  &= \sum_{k} a_k \langle a_k |\left(\sum_i p_i  |\psi_i \rangle\langle \psi_i |\right) |a_k\rangle\\
+  &= \sum_{k} \langle a_k |\left(\sum_i p_i  |\psi_i \rangle\langle \psi_i |\right) a_k |a_k\rangle\\
+  &= \sum_{k} \langle a_k |\left(\sum_i p_i  |\psi_i \rangle\langle \psi_i |\right) \hat{A}|a_k\rangle\\
+  &= \mathrm{Tr}\left(\hat{\rho}\hat{A}\right). \end{aligned}\end{equation*}
+
+Here we have assumed that the eigenstates of $\hat{A}$ form a complete
+orthonormal basis, and we have defined \textbf{the density matrix}
+$\hat{\rho}$ as
+
+\begin{equation*}\hat{\rho}:= \sum_i p_i  \vert\psi_i \rangle\langle \psi_i \vert.\end{equation*}
+
+With this matrix we can calculate the probability of measuring the value $a_k$ of the observable
+$A$ in the mixed state as
+
+\begin{equation*}
+  P(A=a_k) = \sum_{i=1}^m p_i|\langle a_k|\psi_i\rangle|^2 = \langle a_k | \left(\sum_{i=1}^mp_i|\psi_i\rangle\langle\psi_i|\right)|a_k\rangle = \langle a_k |\hat{\rho}|a_k\rangle,
+\end{equation*}
+which is the $k$-th diagonal element of the matrix $\hat{\rho}$ when expressed in the basis of eigenstates of $\hat{A}$.
+
+Note that $\mathrm{Tr}(\hat{\rho})=1$, and $\hat{\rho}$ is an
+hermitian operator (i.e. $\hat{\rho}^{\dagger}=\hat{\rho}$, where $^{\dagger}$ denotes the conjugate transpose), therefore it can be diagonalized. Furthemore, since
+for every vector $|\alpha\rangle$ we have that
+
+\begin{equation*}\langle \alpha |\hat{\rho}|\alpha\rangle = \sum_i p_i|\langle\alpha |\psi_i\rangle|^2 \geq 0,\end{equation*}
+
+therefore $\hat{\rho}$ is positive semidefinite, so all of its
+eigenvalues (let's call them $\rho_1,\dots,\rho_N$) are non-negative.
+Some of them might be zero, some might be repeated, but all are real and
+non-negative. We have then, that:
+
+\begin{equation*} \mathrm{Tr}(\hat{\rho}) = \rho_1 + \cdots + \rho_N = 1,\end{equation*}
+
+so it follows that $0\leq\rho_k\leq 1$ for all $k=1,\dots,N$. This,
+in turn, means that
+
+\begin{equation*} \mathrm{Tr}\left(\hat{\rho}^2\right) = \rho_1^2 + \cdots + \rho_N^2 \leq 1.\end{equation*}
+
+We have, then, that $\mathrm{Tr}\left(\hat{\rho}^2\right) = 1$ if and
+\emph{only if} $\rho_k=1$ for some $k$, and all the other
+$\rho_j = 0$ for $j\neq k$. What this means is that \textbf{we are
+certain that the system is in a particular state} $|\psi_k\rangle$,
+so, as in the first section, the system is in a \textbf{pure state}. In
+this case, $1$ is an eigenvalue of $\hat{\rho}$, then it must leave
+its eigenstate $|\psi\rangle$ invariant:
+
+\begin{equation*}\hat{\rho}|\psi\rangle = |\psi\rangle.\end{equation*}
+
+Now $\hat{\rho}$ cannot have any other (nonzero) eigenvalues, so it
+can be written in the form
+
+\begin{equation*}\hat{\rho} = |\psi\rangle\langle\psi|.\end{equation*}
+
+This is the general form of the density matrix for a pure state. Recall
+that, in this case $\mathrm{Tr}(\hat{\rho}^2)=1$, but for any other case,
+the inequality is strict. This means that $\mathrm{Tr}(\hat{\rho}^2)$ is, in
+some sense, \textbf{a measure of how ``pure''} the state is.
+
+
+What we have just seen is that \textbf{the density matrix can represent
+both mixed and pure states}, where pure states are of the form
+$\hat{\rho}_{\text{pure}}=|\psi\rangle\langle\psi|$, whereas mixed
+states are a \textbf{convex combination} of density matrices of pure
+states:
+
+\begin{equation*} \hat{\rho}_{\text{mixed}} = \sum_{i=1}^m  p_i\hat{\rho}_{i,\text{pure}},\end{equation*}
+
+with $p_1+\dots+p_m = 1$.
+
+\subsection{An example}
+\label{sec:an-example}
+
+Consider the case of spin-$1/2$. Suppose that we are in a mixed state of $|+z\rangle$ with
+probability $p$ and $|-z\rangle$ with probability $1-p$. The density matrix for this mixed state
+is
+
+\begin{equation*}
+  \hat{\rho} = p|+z\rangle\langle +z | + (1-p)|-z\rangle\langle -z |.
+\end{equation*}
+
+In this $z$-basis, the matrix takes the rather simple form
+\begin{equation*}
+  \hat{\rho} =
+  \begin{pmatrix}
+    p & 0\\
+    0 & 1-p
+  \end{pmatrix},
+\end{equation*}
+so that the square is simply
+\begin{equation*}
+  \hat{\rho}^2 =
+  \begin{pmatrix}
+    p^2 & 0\\
+    0 & 1-2p+p^2
+  \end{pmatrix}.
+\end{equation*}
+Then we have that
+\begin{equation*}
+  \mathrm{Tr}\left(\hat{\rho}^2\right) = 2p^2 -2p + 1.
+\end{equation*}
+We could say that $I(\hat{\rho}) = 1-\mathrm{Tr}\left(\hat{\rho}^2\right)$ is a measurement of how \textbf{impure} the
+state is: if this quantity is zero, then the state is pure. The maximum of $I(\hat{\rho})$ occurs when $p=1/2$, which
+is precisely when there is maximum uncertainty about the state, 
+\begin{equation*}
+  \hat{\rho} = \frac{1}{2}|+z\rangle\langle +z | + \frac{1}{2}|-z\rangle\langle -z |.
+\end{equation*}
+
+The state that this matrix represents is not, I repeat, \textbf{not} the same as the ``superposed'' state
+\begin{equation*}
+  |+x\rangle = \frac{1}{\sqrt{2}}\left(|+z\rangle + |-z\rangle\right).
+\end{equation*}
+Let's analyze the similarities and the differences between the two.
+
+The two states seem quite similar at first: They seem to be ``equal parts'' $|+z\rangle$
+and $|-z\rangle$. Furthermore, and probably most importantly, the probability distribution of the $z$-spin observable $\hat{S}_z$
+is \textit{the same} for both states. For a refresher, (assuming for god's sake that $\hslash = 1$), the $|\pm z\rangle$
+states are precisely the eigenstates of $\hat{S}_z$ with eigenvalues $\pm\frac{1}{2}$:
+\begin{equation*}
+  \hat{S}_z|\pm z\rangle = \pm\frac{1}{2}|\pm z\rangle.
+\end{equation*}
+Therefore in our mixed state represented by $\hat{\rho}$,
+\begin{equation*}
+  P\left(S_z = \pm\frac{1}{2}\right)_{\text{mixed}} = \langle \pm z | \hat{\rho} | \pm z\rangle = \frac{1}{2}.
+\end{equation*}
+Similarly, for the ``superposed state'' $|+x\rangle$, we have:
+\begin{equation*}
+  P\left(S_z = \pm \left.\frac{1}{2} \right| +x \right) = |\langle \pm z | +x \rangle|^2 = \frac{1}{2}.
+\end{equation*}
+This means that \textbf{if we only were able to measure} $S_z$, then the two states would indeed be indistinguishable. However, \textit{there are other observables}
+that distinguish the half-and-half mixed state represented by $\hat{\rho}$ and the ``superposed'' state $|+x\rangle$. A crystal-clear observable that can distinguish between the two is the $x$-spin observable,
+$S_x$. On one hand, for the mixed state $\hat{\rho}$,
+\begin{equation*}
+  P\left(S_x = \frac{1}{2}\right)_{\text{mixed}} = \langle +x |\hat{\rho} | +x \rangle = \frac{1}{2}.
+\end{equation*}
+However, for the superposed state:
+\begin{equation*}
+  P\left(S_x = \left.\frac{1}{2} \right| +x \right) = |\langle +x | +x \rangle|^2 = 1.
+\end{equation*}
+Furthermore, if we write the density matrix for the state $|+x\rangle$, i.e. $\hat{\rho}_{+x}=|+x\rangle\langle +x|$,
+it passes the purity test with flying colors:
+\begin{equation*}
+  \mathrm{Tr}\left(\hat{\rho}_{+x}^2\right) = 1,
+\end{equation*}
+whereas, as  we had already seen, for our mixed state $\mathrm{Tr}(\hat{\rho}^2)=1/2$.
+
+\subsection{The takeaway}\label{the-takeaway}
+
+The most important things to take away from all this are the
+following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item There is \textbf{always} uncertainty in the measurement of
+observables in quantum mechanics, even if you are \textbf{absolutely
+certain} that the system is in a specific state. This uncertainty is
+\textbf{not} a consequence of systematic or instrumental errors, or lack
+of information about the system. In this case of absolute certainty, we
+say that the system is in a \textbf{pure state}.
+
+\item When we are not sure of what state the system is in, we represent our lack of knowledge by
+writing down a probability distribution on the set of probable states.
+Mathematically, we say that we know with probability $p_i$ that the
+system is in a state $\vert\psi_i\rangle$, and say that the system is
+in a \textbf{mixed state}. In this case, there is an \emph{additional}
+uncertainty in the measurement of observables that comes from our
+\emph{lack of knowledge} of the precise state that the system is in.
+
+\item Both pure and mixed states can be represented mathematically with a
+\textbf{density matrix}. This matrix has a lot of neat properties that
+make calculations of expectation values quite easy, even in the case of
+mixed states.
+\end{enumerate}
+
+\subsubsection{References}\label{references}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Most of this was inspired by a set of lectures that were given by dr.
+  \href{http://www.staff.science.uu.nl/~vando101/}{Stefan Vandoren}
+  during the Summer School in Theoretical Physics at Utrecht University
+  in 2018.
+\item
+  Ballentine, Leslie E. 1990. \emph{Quantum Mechanics}.
+\end{enumerate}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
