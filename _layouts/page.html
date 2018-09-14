@@ -10,8 +10,6 @@ layout: base
   target=layout.header source0=page.header -%}
 {%- assign _header = __return -%}
 
-{%- include markdown-enhancements.html -%}
-
 {%- include snippets/assign.html
   target = site.data.variables.default.page.full_width
   source0=layout.full_width source1=page.full_width -%}
@@ -21,6 +19,7 @@ layout: base
   target = site.data.variables.default.page.comment
   source0=layout.comment source1=page.comment -%}
 {%- assign _comment = __return -%}
+
 
 {%- assign _article_header_excerpt_truncate = include.excerpt_truncate | default: 200 -%}
 
@@ -234,5 +233,5 @@ layout: base
 {%- endif -%}
 
 
-
+{%- include markdown-enhancements.html -%}
 {%- include pageview.html -%}
