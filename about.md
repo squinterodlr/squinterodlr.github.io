@@ -10,7 +10,7 @@ which are mostly loosely-threaded thoughts about things I've learned or want to
 clarify in mathematics and theoretical physics.
 
 ## The Author
-I am Santiago Quintero de los Ríos. I did my bachelor's in mathemtics at the
+I am Santiago Quintero de los Ríos. I did my bachelor's in mathematics at the
 National University of Colombia, and a bacheror's in astronomy at the University of
 Antioquia, both in Medellín, Colombia. I am currently a master's student of the program in Mathematical
 Sciences and Theoretical Physics at Utrecht University. My research interests
