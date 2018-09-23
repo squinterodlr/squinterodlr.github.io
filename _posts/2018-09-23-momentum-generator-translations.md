@@ -17,7 +17,7 @@ tags:
 mathjax: true
 ---
 
-Get this post [in pdf format here](/assets/docs/pdf_posts/momentum-generator-translations.pdf).
+Get this post [in pdf format here](/assets/docs/pdf_posts/momentum_generator_translations.pdf).
 
 In quantum mechanics, it is often stated that *the momentum \[operator\]
 is the generator of translations*. However, most texts fail to give a
