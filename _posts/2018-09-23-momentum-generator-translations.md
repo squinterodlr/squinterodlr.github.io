@@ -324,7 +324,7 @@ taking the derivative with respect to $\epsilon$ again we obtain:
 $$\frac{\mathrm{d}^2}{\mathrm{d}\epsilon^2} g\left(\epsilon\right) = \frac{\mathrm{d}}{\mathrm{d}\epsilon} \left\{g,f\right\}_\epsilon = \left\{\left\{g,f\right\},f\right\}_\epsilon.$$
 
 So if we call $X_f$ the differential operator
-$X_f(g):=\left\{g,f\right\}$, we can see that
+$$X_f(g):=\left\{g,f\right\}$$, we can see that
 
 $$\frac{\mathrm{d}^n}{\mathrm{d}\epsilon^n}g\left(\epsilon\right) = X_f(X_f(\dots X_f(g)))_{\epsilon}={X_f}^n(g)_{\epsilon}.$$
 
