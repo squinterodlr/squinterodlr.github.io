@@ -218,11 +218,11 @@ $$\begin{aligned}
 determine. Since we want these transformations to be canonical, the
 Poisson brackets must be conserved, so
 
-\begin{equation}\begin{aligned}
+$$\begin{aligned}
     {\left\{q^i,p_i\right\}} = 1 &= {\left\{Q^i,P_i\right\}} \\
     &= {\left\{q^i + \epsilon A^i,p_i + \epsilon B_i\right\}}\\
     &= {\left\{q^i,p_i\right\}} + \epsilon\left({\left\{A^i,p_i\right\}}+{\left\{q^i,B_i\right\}}\right) + \mathcal{O}(\epsilon^2).
-    \end{aligned}\end{equation}
+    \end{aligned}$$
 
 Then, working up to first order in $\epsilon$, we
 require that
