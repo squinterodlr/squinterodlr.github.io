@@ -1,6 +1,4 @@
 ---
-author:
-- Santiago Quintero de los Ríos
 title: 'Why is momentum the generator of translations?'
 excerpt: In quantum mechanics, it is often stated that <i>the momentum [operator] is the generator of translations</i>. However, most texts fail to give a satisfactory justification to this claim, if any is given at all. What we will do here is define <i>precisely</i> what it means for observable to be a generator of a group of transformations, both in quantum and classical mechanics, and prove that, indeed, the momentum observable <i>is</i> the generator of translations in classical mechanics.
 categories:
@@ -65,7 +63,7 @@ then it follows that
 
 \begin{equation}\label{eq:4}
 \left.\frac{\mathrm{d}}{\mathrm{d}a}\right\vert\_{a = 0}\hat{T}_a = \left.\frac{\mathrm{d}}{\mathrm{d}a}\right\vert\_{a = 0} \exp\left(-ia\hat{w}\right) = -i\hat{w}.\end{equation}
-  
+
 So let $\psi$ be any function on $L^2(\mathbb{R})$. We have that
 
 $$\left.\frac{\mathrm{d}}{\mathrm{d}a}\right\vert_{a = 0}\hat{T}_a\psi(x) = \left.\frac{\mathrm{d}}{\mathrm{d}a}\right\vert_{a = 0}\psi(x-a) = -\frac{\mathrm{d}}{\mathrm{d}x}\psi(x),$$
@@ -91,7 +89,7 @@ operator, because it is the one that generates translations.
 Therefore, the question is shifted: **Why do we give the name “momentum”
 to the operator that generates translations?**
 
-The usual answers 
+The usual answers
 -----------------
 
 If you only want a half-plausible argument, here it goes. Let $\hat{x}$
@@ -333,7 +331,7 @@ $\epsilon=0$, we see that
 
 $$\label{eq:12}
   g(\epsilon) = \sum_{n=0}^{\infty}\frac{1}{n!}\left.{\frac{\mathrm{d}^n}{\mathrm{d}\epsilon^n}}\right|_{\epsilon=0}g(\epsilon) = \sum_{n=0}^{\infty}\frac{1}{n!}{X_f}^n(g)_{(q_0,p_0)} = \exp\left(\epsilon {X_f}(0)\right)g.$$
-  
+
 We call $X_f$ the **infinitesimal generator** associated to $f$.
 
 Alright. We should stop here for a bit and gather what we have. We have
@@ -382,7 +380,7 @@ the differential operator is $X_p = \frac{\partial }{\partial q}$, and
 the canonical transformations are translations! Therefore we say that
 **momentum is the generator of translations**.
 
-The mathematician’s way 
+The mathematician’s way
 -----------------------
 
 This way is basically exactly the same as the one before, just with the
@@ -443,7 +441,7 @@ to this, the directional derivative of $f$ along $X_f$ is zero, since
 
 $$\label{eq:19}
   X_f(f) = \mathrm{d}f(X_f) = \iota_{X_f}\omega(X_f)=\omega(X_f,X_f)=0.$$
-  
+
 This means that if $\Phi^f_\tau$ is the flow of $X_f$, then for all
 values of $\tau$
 
@@ -471,7 +469,7 @@ locally as
 
 $$\label{eq:20}
   X_f = A^\mu{\frac{\partial }{\partial q^\mu}} + B_{\nu}{\frac{\partial }{\partial p_\nu}},$$
-  
+
 then we have that
 
 $$\label{eq:21}
@@ -511,7 +509,7 @@ $X_{p_\nu}$ is simply translation along the $q^\nu$ coordinate. Once
 again, we can say that the \[Hamiltonian vector field associated to
 the\] canonical momentum is the generator of translations.
 
-The takeaway 
+The takeaway
 ============
 
 We proved a general result in classical mechanics: to any observable

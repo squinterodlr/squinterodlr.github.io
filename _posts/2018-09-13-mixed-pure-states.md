@@ -1,8 +1,6 @@
 ---
-author:
-- Santiago Quintero de los Ríos
 title: A few words on mixed and pure states
-excerpt: I see that there is a bit of confusion between mixed and pure states in quantum mechanics. This is because the measurement of arbitrary observables for **pure states** is probabilistic, and this is easily confused with the probabilitites associated to a **mixed state**.
+excerpt: I see that there is a bit of confusion between mixed and pure states in quantum mechanics. This is because the measurement of arbitrary observables for <i>pure states</i> is probabilistic, and this is easily confused with the probabilitites associated to a <i>mixed state</i>.
 categories:
  - quantum mechanics
  - a few words

@@ -2,6 +2,11 @@
 title: 'Mini-post: The periodic 1D wave equation'
 excerpt: Wherein I very briefly discuss the general solution to the periodic 1D wave equation.
 mathjax: true
+show_author_profile: true
+categories:
+    - physics
+tags:
+    - PDE
 ---
 
 Get this post in [pdf format here](/assets/docs/pdf_posts/periodic-wave-equation.pdf).
