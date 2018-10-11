@@ -182,7 +182,7 @@ defaults:
       show_edit_on_github: false
       pageview: true
       mathjax: true
-      author: Santiago Quintero de los Ríos
+      author: "Santiago Quintero de los Ríos"
 
 
 ## => Plugins
