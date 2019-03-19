@@ -7,6 +7,7 @@ categories:
     - physics
 tags:
     - PDE
+key: wave-eqn
 ---
 
 Get this post in [pdf format here](/assets/docs/pdf_posts/periodic-wave-equation.pdf).

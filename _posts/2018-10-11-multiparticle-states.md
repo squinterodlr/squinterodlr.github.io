@@ -7,8 +7,9 @@ of particle 'tags' is a symmetry."
 categories:
     - multiparticle states
 tags:
-    - quantum mechanics
+    - quantum-mechanics
 mathjax: true
+key: multiparticle-states
 ---
 
 Get this post [in PDF format here.](/assets/docs/pdf_posts/multiparticle-states.pdf)

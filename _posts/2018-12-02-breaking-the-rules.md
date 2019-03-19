@@ -5,6 +5,7 @@ categories:
     - honest-physics
 tags:
     - honest physics
+key: breaking-the-rules
 ---
 
 If you look at the curriculum of any respectable Physics program, you'll find mathematics courses like calculus, linear algebra, differential equations, maybe some complex analysis and differential geometry. It seems at a first glance that physicists use the **results** of mathematical theories (e.g. theorems from calculus, linear algebra, functional analysis, etc.), under certain "physical" interpretations of the objects that are used therein (e.g. forces are vector fields, trajectories are curves, quantum states are elements of a Hilbert space), to arrive at meaningful expressions concerning physical entities.  That is, there is some kind of dictionary that tells you: this mathematical object represents this physical entity.

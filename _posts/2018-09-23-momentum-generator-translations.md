@@ -13,6 +13,7 @@ tags:
     - poisson bracket
     - symplectic geometry
 mathjax: true
+key: momentum-generator
 ---
 
 Get this post [in pdf format here](/assets/docs/pdf_posts/momentum_generator_translations.pdf).

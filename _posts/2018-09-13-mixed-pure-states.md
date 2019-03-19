@@ -9,7 +9,7 @@ tags:
  - probability
  - statistical physics
 mathjax: true
-
+key: mixed-pure-states
 ---
 Get this post in [pdf format here](/assets/docs/pdf_posts/mixed-pure-states.pdf).
 
