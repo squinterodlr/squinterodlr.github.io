@@ -4,7 +4,7 @@ titles:
   en: Notes
 key: page-notes
 permalink: /notes/
-comments: false
+comment: false
 ---
 
 Here are some of the notes I've written. Unless otherwise stated, all of these are works

@@ -4,7 +4,7 @@ titles:
   en: About
 key: page-about
 permalink: /about/
-comments: false
+comment: false
 ---
 **Homotopico** is my personal website. Here you will find my [blog posts](/),
 which are mostly loosely-threaded thoughts about things I've learned or want to
