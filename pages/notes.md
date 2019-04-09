@@ -1,7 +1,6 @@
 ---
 layout: article
-titles:
-  en: Notes
+title: Notes
 key: page-notes
 permalink: /notes/
 comment: false

@@ -1,7 +1,6 @@
 ---
 layout: article
-titles:
-  en: About
+title: About
 key: page-about
 permalink: /about/
 comment: false
