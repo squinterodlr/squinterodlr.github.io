@@ -1,5 +1,8 @@
 header:
   - titles:
+      en:       Blog
+    url:        /
+  - titles:
       en:       Archive
     url:        /archive.html
   - titles:
@@ -7,4 +10,4 @@ header:
     url:        /about/
   - titles:
       en:       Notes
-    url:        /pages/notes.html
+    url:        /notes/
