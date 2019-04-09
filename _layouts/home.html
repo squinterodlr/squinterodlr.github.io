@@ -1,7 +1,7 @@
 ---
 layout: articles
-title: Home
-show_title: false
+title: Homotopico
+show_title: true
 articles:
   data_source: paginator.posts
   article_type: BlogPosting
@@ -11,7 +11,7 @@ articles:
   show_info: true
 mathjax: true
 ---
-<h1>{{ site.title }}</h1>
+<!--<h1>{{ site.title }}</h1>-->
 <h3>{{ site.description}}</h3>
 {{ content }}
 <div class="layout--home">
@@ -20,3 +20,4 @@ mathjax: true
 <script>
   {%- include scripts/home.js -%}
 </script>
+<meta name="twitter:title"   content="{{site.title}}">

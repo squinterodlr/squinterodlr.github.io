@@ -2,8 +2,11 @@
 
 <meta name="twitter:site"    content="@{{ site.author.twitter }}">
 <meta name="twitter:creator" content="@{{ site.author.name }}">
-
+{% if page.title %}
 <meta name="twitter:title"   content="{{ page.title }}">
+{% else %}
+<meta name="twitter:title"   content="Homotopico">
+{% endif %}
 
 {% if page.excerpt %}
 <meta name="twitter:description" content="{{ page.excerpt }}">
