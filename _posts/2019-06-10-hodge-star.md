@@ -28,8 +28,7 @@ the best dad, how did yo do it? Well I told you, $k$-forms and
 $(n-k)$-forms are not that different, you just need a metric and some
 patience and you can turn one into the other.
 
-Metric on the exterior algebra {#sec:metric-exter}
-==============================
+## Metric on the exterior algebra
 
 Let $V$ be a finite-dimensional vector space of dimension $n$, and $g$ a
 Lorentzian metric on $V$, i.e. a symmetric, non-degenerate bilinear map
@@ -96,15 +95,14 @@ $$g(e^{\mu_1}\wedge\dots\wedge e^{\mu_k},e^{\nu_1}\wedge\dots\wedge e^{\nu_k}) =
     0 &\text{ otherwise}
   \end{cases},$$
 
-where here $s$ is the number of negative eigenvalues of
-the metric (i.e. the number of elements in the orthonormal basis which
-have *negative* length). Since we know that the elements of the form
+where here $s$ is the number the number of elements in $\\{e^{\mu_1},\dots,e^{\mu_k}\\}$ which
+have *negative* length. Since we know that the elements of the form
 $e^{\mu_1}\wedge\dots\wedge e^{\mu_k}$ form a basis for $\Lambda^kV$,
 the previous result tells us that in this basis the matrix of $g$ is
 diagonal with entries $\pm 1$, and thus $g$ is non-degenerate.
 
-Defining the Hodge star {#sec:defining-hodge-star-1}
-=======================
+## Defining the Hodge star
+
 
 Now let ${\mathrm{vol}}\in \Lambda^nV$ be a volume form on $V$, given in
 terms of an oriented orthonormal basis $e_1,\dots,e_n$ as
@@ -236,8 +234,7 @@ With this, we then see that
  $$ \star(e^{\rho_1}\wedge\dots\wedge e^{\rho_k}) = (-1)^s\epsilon^{\rho_1\dots\rho_k\nu_1\dots\nu_{n-k}}(e^{\nu_1}\wedge\dots\wedge e^{\nu_{n-k}}) \qquad\text{(no Einstein sum)}. $$ 
 
 
-Making it useful: formulas in coordinates {#sec:making-it-useful}
-=========================================
+## Making it useful: formulas in coordinates 
 
 This is all nice and all but we want to compute the star of a form
 explicitly if we have it in terms of some basis. Can do! Let
@@ -381,8 +378,7 @@ exterior algebra of differential forms, which are dual to the tangent
 spaces. That changes the formula a little bit since the matrix of the
 metric on the dual is the *inverse* of the matrix in the tangent space.
 
-On differential forms {#sec:differential-forms}
-=====================
+## On differential forms 
 
 Before jumping head-first to differential forms, let’s see what happens
 when we try to apply all this on the dual. If we have a metric $g$ on
@@ -453,7 +449,7 @@ metric $g^{\text{dual}}$ on $T_x^\*M$ via the isomorphism
 $(g_x)^\sharp:T_x^\*M\to T_xM$ as above. Now we define the Hodge-dual
 *pointwise* but on the *cotangent space*, so the metric we use is the
 *inverse* of the metric on $TM$. That is, in the notation of section
-\[sec:defining-hodge-star-1\] we let $V=T_x^\*M$, so that the Hodge star
+[Defining the Hodge star](#defining-the-hodge-star) we let $V=T_x^\*M$, so that the Hodge star
 is $\star:\Omega_x^k(M)\to\Omega_x^{n-k}(M)$, but in this case the
 components are
 
@@ -466,8 +462,7 @@ can happily extend $\star$ to be a global operator
  $$ \star:\Omega^k(M)\to \Omega^{n-k}(M). $$ 
 
 
-A neat example: de Rham vs. curl, grad, div {#sec:neat-example:-div}
-===========================================
+## A neat example: de Rham vs. curl, grad, div
 
 Now let’s make it explicit. We consider $M={\mathbb{R}}^3$, with its
 natural euclidean metric $g$, and coordinates $x,y,z$. The volume form
@@ -480,7 +475,8 @@ recall that if $e^1,\dots,e^n$ is an orthonormal basis, then
 
  $$ \star(e^{\rho_1}\wedge\dots\wedge e^{\rho_k}) = (-1)^s\epsilon^{\rho_1\dots\rho_k\nu_1\dots\nu_{n-k}}(e^{\nu_1}\wedge\dots\wedge e^{\nu_{n-k}}) \qquad\text{(no Einstein sum)}, $$ 
 
-where $s$ is the number of negative eigenvalues of the metric and
+where $s$ is the number of elements in $\\{e^{\rho_1},\dots,e^{\rho_k}\\}$ with
+negative length, and
 ${\\{\nu_1,\dots,\nu_{n-k}\\}}$ is complementary to
 ${\\{\rho_1,\dots,\rho_k\\}}$ in ${\\{1,\dots,n\\}}$.
 Now a $0$-form is just a smooth function, say $f$, and we simply have
@@ -588,8 +584,7 @@ that ${\mathrm{div}}(\mathbf{B})=0$, then if $H^2(U)=0$, we can
 guarantee that $\mathbf{B}={\mathrm{curl}}(\mathbf{A})$ for some
 field $\mathbf{A}\in \mathfrak{X}(U)$.
 
-Another neat example: wedge and cross product {#sec:cross}
-=============================================
+## Another neat example: wedge and cross product
 
 Have you noticed that the cross product in ${\mathbb{R}}^3$ behaves very
 similarly to the wedge product? With the antisymmetry and all. There is,
@@ -628,8 +623,7 @@ We then happily conclude that
 
  for all $u,v\in {\mathbb{R}}^3$.
 
-The takeaway {#sec:takeaway}
-============
+## The takeaway
 
 The Hodge star operator makes an explicit isomorphism between the
 exterior powers $\Lambda^kV$ and $\Lambda^{n-k}V$ of a vector space with
@@ -645,8 +639,7 @@ With the Hodge star we will be able to neatly write Maxwell’s equations,
 and more importantly, generalize them for a large class of physical
 fields: gauge fields.
 
-References {#sec:references}
-==========
+## References
 
 -   Báez, J. C. and Muniain, J. P. (1994). *Gauge Fields, Knots, and
     Gravity*, World Scientific. Section I.5. Honestly I don’t even know
