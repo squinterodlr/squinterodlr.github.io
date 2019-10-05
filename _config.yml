@@ -36,10 +36,10 @@ author:
   name      : "Santiago Quintero de los Ríos"
   url       : "/about/"
   avatar    : "/assets/images/avatar.png"
-  bio       : "Mathematical sciences and Theoretical physics master's student at Utrecht University."
+  bio       : "Mathematical sciences master's student at Utrecht University."
   email     : "squinterodlr@gmail.com"
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  twitter   : "mrrevers" # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  twitter   : "mrreevers" # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name/
