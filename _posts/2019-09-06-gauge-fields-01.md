@@ -28,7 +28,7 @@ This first part does not have too many prerrequisites: only the basics
 of electromagnetism. I'll try to be as self-contained as possible in the
 physics part. Without further ado, let's begin.
 
-Potentials for the electric and magnetic field {#sec:potent-electr-magn}
+Potentials for the electric and magnetic field
 ==============================================
 
 In Gaussian units, the microscopic (or vacuum) Maxwell equations are
@@ -176,7 +176,7 @@ it's a *symmetry*), and this transformation can be done differently at
 every point in space-time (since $\Lambda$ can be *any* smooth
 function). That's where the word *local* comes from.
 
-In special-relativistic notation {#sec:spec-relat-notat}
+In special-relativistic notation
 ================================
 
 Let's go back to square one, and let's rewrite this more neatly[^4] in
@@ -543,7 +543,7 @@ $F$ responds to the presence of charges and currents (represented by
 $j$). The form of these equations is typical of a gauge field, as we
 shall see in future posts.
 
-Takeaway and future {#sec:takeaway-future}
+Takeaway and future
 ===================
 
 We saw that the inhomogeneous Maxwell equations allow (in some cases,
@@ -567,7 +567,7 @@ objects that can interact with the electromagnetic field. We will also
 see a Lagrangian description of the field equations, which again will be
 typical of gauge fields.
 
-References {#sec:references}
+References
 ==========
 
 -   Jackson, J. D. (1998). *Classical Electrodynamics, Third Edition*.

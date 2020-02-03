@@ -4,6 +4,7 @@ excerpt: "I'm so tired of sitting for two (even three!) hours in a lecture hall,
 categories:
 tags:
     - Education
+key: lectures-obsolete
 ---
 
 Hear me out: lectures are obsolete and should be phased in favor of a more active approach to learning.

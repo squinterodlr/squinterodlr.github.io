@@ -28,7 +28,8 @@ the best dad, how did yo do it? Well I told you, $k$-forms and
 $(n-k)$-forms are not that different, you just need a metric and some
 patience and you can turn one into the other.
 
-## Metric on the exterior algebra
+Metric on the exterior algebra
+==============================
 
 Let $V$ be a finite-dimensional vector space of dimension $n$, and $g$ a
 Lorentzian metric on $V$, i.e. a symmetric, non-degenerate bilinear map
@@ -234,7 +235,8 @@ With this, we then see that
  $$ \star(e^{\rho_1}\wedge\dots\wedge e^{\rho_k}) = (-1)^s\epsilon^{\rho_1\dots\rho_k\nu_1\dots\nu_{n-k}}(e^{\nu_1}\wedge\dots\wedge e^{\nu_{n-k}}) \qquad\text{(no Einstein sum)}. $$ 
 
 
-## Making it useful: formulas in coordinates 
+Making it useful: formulas in coordinates 
+=========================================
 
 This is all nice and all but we want to compute the star of a form
 explicitly if we have it in terms of some basis. Can do! Let
@@ -378,7 +380,8 @@ exterior algebra of differential forms, which are dual to the tangent
 spaces. That changes the formula a little bit since the matrix of the
 metric on the dual is the *inverse* of the matrix in the tangent space.
 
-## On differential forms 
+On differential forms
+=====================
 
 Before jumping head-first to differential forms, let’s see what happens
 when we try to apply all this on the dual. If we have a metric $g$ on
@@ -462,7 +465,8 @@ can happily extend $\star$ to be a global operator
  $$ \star:\Omega^k(M)\to \Omega^{n-k}(M). $$ 
 
 
-## A neat example: de Rham vs. curl, grad, div
+A neat example: de Rham vs. curl, grad, div
+-------------
 
 Now let’s make it explicit. We consider $M={\mathbb{R}}^3$, with its
 natural euclidean metric $g$, and coordinates $x,y,z$. The volume form
@@ -584,7 +588,8 @@ that ${\mathrm{div}}(\mathbf{B})=0$, then if $H^2(U)=0$, we can
 guarantee that $\mathbf{B}={\mathrm{curl}}(\mathbf{A})$ for some
 field $\mathbf{A}\in \mathfrak{X}(U)$.
 
-## Another neat example: wedge and cross product
+Another neat example: wedge and cross product
+-------------
 
 Have you noticed that the cross product in ${\mathbb{R}}^3$ behaves very
 similarly to the wedge product? With the antisymmetry and all. There is,
@@ -623,7 +628,8 @@ We then happily conclude that
 
  for all $u,v\in {\mathbb{R}}^3$.
 
-## The takeaway
+The takeaway
+===============
 
 The Hodge star operator makes an explicit isomorphism between the
 exterior powers $\Lambda^kV$ and $\Lambda^{n-k}V$ of a vector space with
@@ -639,7 +645,8 @@ With the Hodge star we will be able to neatly write Maxwell’s equations,
 and more importantly, generalize them for a large class of physical
 fields: gauge fields.
 
-## References
+References
+==========
 
 -   Báez, J. C. and Muniain, J. P. (1994). *Gauge Fields, Knots, and
     Gravity*, World Scientific. Section I.5. Honestly I don’t even know
