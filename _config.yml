@@ -26,7 +26,7 @@ description: > # this means to ignore newlines until "Language & timezone"
 ## => Language and Timezone
 ##############################
 lang: "en" # the language of your site, "en" (default, English), "zh"(简体中文), "zh-Hans"(简体中文), "zh-Hant"(繁體中文)
-timezone: "Europe/Amsterdam" # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+timezone: "Europe/Copenhagen" # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 
 ## => Author and Social
@@ -36,7 +36,7 @@ author:
   name      : "Santiago Quintero de los Ríos"
   url       : "/about/"
   avatar    : "/assets/images/avatar.png"
-  bio       : "Mathematical sciences master's student at Utrecht University."
+  bio       : "PhD student at the Centre for Quantum Mathematics."
   email     : "squinterodlr@gmail.com"
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : "mrreevers" # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -190,3 +190,4 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-image-size
