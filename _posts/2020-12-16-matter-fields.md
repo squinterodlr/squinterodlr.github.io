@@ -114,7 +114,7 @@ computation, no tricks involved):
 
 $$H(\mathbf{x},\mathbf{p},t) = \dot{\mathbf{x}}\cdot \mathbf{p} - L = \frac{1}{2m}\left\|\mathbf{p}-\frac{e}{c}\mathbf{A}(\mathbf{x},t)\right\|^2 + e\varphi(\mathbf{x},t).$$
 
-<div style="text-align: center"><img src="/assets/images/objection.png" width="256" /></div>
+<div style="text-align: center"><img src="/assets/posts/matter-fields/objection.png" width="256" /></div>
 
 The Hamiltonian (and the Lagrangian too) has an explicit dependence on
 the potentials $\varphi, \mathbf{A}$, whereas the Lorentz force is only
