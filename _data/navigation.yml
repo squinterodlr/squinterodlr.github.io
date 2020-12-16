@@ -1,0 +1,13 @@
+header:
+  - titles:
+      en:       Blog
+    url:        /
+  - titles:
+      en:       Archive
+    url:        /archive.html
+  - titles:
+      en:       Notes
+    url:        /notes/
+  - titles:
+      en:       About
+    url:        /about/
