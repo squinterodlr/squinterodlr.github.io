@@ -12,14 +12,11 @@ clarify in mathematics and theoretical physics.
 
 Me
 --------
-I am Santiago Quintero de los Ríos. I am currently a PhD student 
-a the [Centre for Quantum Mathematics](https://www.sdu.dk/en/qm)
-at the University of Southern Denmark, in Odense. My research
-project is in quantum Chern-Simons theory. I'm mostly
-interested in mathematical physics, particularly the geometrical
-aspects of fundamental physics.
+I am Santiago Quintero de los Ríos. I'm a quantitative analyst at [Odigo Energy](https://www.odigoenergy.com/),
+in the lovely city of Aarhus, Denmark. A while back I finished my PhD in mathematics
+at the University of Southern Denmark, in Odense. I spend my time cursing the invention of daylight saving time,
+optimizing color palettes for plots, thinking about (and doing) mathematical physics,
+stochastic processes, math and physics education, role-playing games, and creative coding.
 
-I think a lot about education in maths and physics, and higher education in general.
-
-Here's a picture of me and my dad eating fried fish in Rotterdam.
+Here's a picture of me and my dad eating fried fish in Rotterdam. It's an old picture.
 ![](/assets/images/den-haag.jpg)
